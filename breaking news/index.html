@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="company-logo">
+                <img src="https://imgs.search.brave.com/6LyO8mMJScEuxR7o5IQtkJTo7Hl8v_cZ6CSjOHb9yRQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1Lzk0LzIzLzAx/LzM2MF9GXzU5NDIz/MDE0NV9YQTBBamZa/T2owaWVmc20ycGpH/QlZmeDhzUFVQUTdL/NS5qcGc" alt="Breaking News" />
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li id="ipl" class="hover-link nav-item">Ipl</li>
+                    <li id="finance" class="hover-link nav-item">Finance</li>
+                    <li id="politics" class="hover-link nav-item">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="news-input" id="search-text" placeholder="e.g. Science" />
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container flex" id="cards-container"></div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" class="news-img" />
+            </div>
+            <div class="card-content">
+                <h3 class="news-title">This is the Title</h3>
+                <h6 class="news-source">End Gadget 27/04/2025</h6>
+                <p class="news-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
